@@ -244,6 +244,12 @@ export const Hero=()=>{
                 <path d="M0 0C72 68 252 122 512 122C772 122 950 24 1224 24C1400 24 1428 0 1428 0V174H0V0Z" fill="rgba(255,255,255,0.03)"/>
                 </svg>
             </div>
+          <div className='absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800 z-40'>
+            <a  href='#about' className='flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group'>
+                 <span className="text-xs uppercase tracking-wider">Scroll</span>
+                 <ChevronDown className="w-6 h-6 animate-bounce" />
+            </a>
+        </div>
                 </section>
 
 }
