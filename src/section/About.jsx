@@ -20,9 +20,37 @@ const highlight=[
         title:"Innovation",
         description:"Using the latest technologies and best pratices."
     }
-]
+];
+
+const skills=[
+    "HTML",
+    "CSS",
+    "Javascript/Typescript",
+    "Node.js",
+    "Express.js",
+    "React.js",
+    "MySQL",
+    "Github",
+    "AWS",
+    "VS Code",
+    "Postman"
+];
 export const About=()=>{
     return <section id="about" className="py-32 relative overflow-hidden">
+         <div className='animate-fade-in animation-delay-600'>
+                <p className='text-lg text-muted-foreground text-center mb-6'>Technologies I work with</p>
+                <div className='relative overflow-hidden'>
+                    <div className='absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10'/>
+                    <div className='absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10'/>
+                    <div className='flex animate-marquee'>
+                        {[...skills,...skills,...skills].map((skill,i)=>(
+                            <div key={i} className='flex-shrink-0 px-8 py-4 '>
+                                <span className='text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors'>{skill}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         <div className="container relative mx-auto px-6 z-10">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8">
