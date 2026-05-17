@@ -4,7 +4,7 @@ import {  ChevronDown, Download, DownloadIcon, Send } from 'lucide-react';
 import { AnimatedBorderButton } from '../components/AnimatedButton';
 import { SiLeetcode } from 'react-icons/si';
 import { FaGithub,FaLinkedin } from 'react-icons/fa';
-import { useRef, useEffect } from "react";
+import { useRef, useEffect,useState } from "react";
 const skills=[
     "HTML",
     "CSS",
