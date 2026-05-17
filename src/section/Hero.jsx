@@ -116,7 +116,7 @@ export const Hero=()=>{
                         Work with me
                     </Button>
 
-                    <a href="cv/syed_atif_ali.pdf" download="syed_atif_ali.pdf">
+                    <a href="cv/syed_atif_ali_cv.pdf" download="syed_atif_ali_cv.pdf">
                         <AnimatedBorderButton className="text-sm"><DownloadIcon/>Download CV</AnimatedBorderButton>
                     </a>
                     </div>
