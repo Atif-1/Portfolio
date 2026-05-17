@@ -76,6 +76,40 @@ function useTilt3D() {
 }
 
 export const Hero=()=>{
+       const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    setIsDownloading(true);
+
+    try {
+      const response = await fetch('/cv/syed_atif_ali_cv.pdf');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const blob = await response.blob();
+      
+      // Check if blob is valid
+      if (blob.size === 0) {
+        setIsDownloading(false);
+        return;
+      }
+
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'syed_atif_ali_cv.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+      setIsDownloading(false);
+    } catch (error) {
+      console.error('Download failed:', error);
+      setIsDownloading(false);
+    }
+  };
     const tiltRef = useTilt3D();
 
     return     <section className="relative min-h-screen bg-gradient-to-b from-[#071029] via-[#081726] to-[#041018] overflow-hidden">
@@ -116,8 +150,20 @@ export const Hero=()=>{
                         Work with me
                     </Button>
 
-                    <a href="cv/syed_atif_ali_cv.pdf" download="syed_atif_ali_cv.pdf">
-                        <AnimatedBorderButton className="text-sm"><DownloadIcon/>Download CV</AnimatedBorderButton>
+                        <a href="/cv/syed_atif_ali_cv.pdf" download="syed_atif_ali_cv.pdf" onClick={handleDownload}>
+                        <AnimatedBorderButton className="text-sm">
+                            {isDownloading ? (
+                                <>
+                                    <span className="animate-spin">⏳</span>
+                                    Downloading...
+                                </>
+                                ) : (
+                                <>
+                                    <DownloadIcon />
+                                    Download CV
+                                </>
+                            )}
+                        </AnimatedBorderButton>
                     </a>
                     </div>
 
