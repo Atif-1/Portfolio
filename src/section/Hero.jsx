@@ -150,7 +150,7 @@ export const Hero=()=>{
                         Work with me
                     </Button>
 
-                        <a href="/cv/syed_atif_ali_cv.pdf" download="syed_atif_ali_cv.pdf" onClick={handleDownload}>
+                        <a onClick={handleDownload}>
                         <AnimatedBorderButton className="text-sm">
                             {isDownloading ? (
                                 <>
