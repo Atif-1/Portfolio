@@ -217,7 +217,7 @@ export const Hero=()=>{
                                     </p>
 
                                     <div className="mt-6 flex gap-3">
-                                    <a href='#about'>
+                                    <a href="#about">
                                         <Button size="sm" className="z-30" >About me</Button>
                                     </a>
                                     </div>
