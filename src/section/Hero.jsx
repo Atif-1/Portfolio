@@ -1,3 +1,4 @@
+import cvPdf from '/cv/syed_atif_ali.pdf';
 import '@/index.css'; 
 import {Button} from '@/components/Button'
 import {  ChevronDown, Download, DownloadIcon, Send } from 'lucide-react';
@@ -116,7 +117,7 @@ export const Hero=()=>{
                         Work with me
                     </Button>
 
-                    <a href="/cv/syed_atif_ali.pdf" download>
+                    <a href={cvPdf} download="syed_atif_ali.pdf">
                         <AnimatedBorderButton className="text-sm"><DownloadIcon/>Download CV</AnimatedBorderButton>
                     </a>
                     </div>
