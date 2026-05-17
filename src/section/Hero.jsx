@@ -216,11 +216,11 @@ export const Hero=()=>{
                                     Build production-ready features / apps with performance , maintainability and also deployed them.
                                     </p>
 
-                                    <div className="mt-6 flex gap-3">
+                                    {/* <div className="mt-6 flex gap-3">
                                     <a href="#about">
                                         <Button size="sm" className="z-30" >About me</Button>
                                     </a>
-                                    </div>
+                                    </div>*/}
                                 </div>
                                 </div>
 
