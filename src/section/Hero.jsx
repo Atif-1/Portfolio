@@ -1,4 +1,4 @@
-import cvPdf from '../public/cv/syed_atif_ali.pdf';
+import cvPdf from '../public/cv/syed_atif_ali.pdf?url';
 import '@/index.css'; 
 import {Button} from '@/components/Button'
 import {  ChevronDown, Download, DownloadIcon, Send } from 'lucide-react';
