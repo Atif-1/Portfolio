@@ -70,9 +70,9 @@ export const Contact=()=>{
     </div>
 
     {/* Form & Info Grid */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 gap-8">
       {/* Contact Form */}
-      <div className="p-6 glass rounded-2xl border border-primary/30 animate-fade-in animation-delay-300">
+    {/*   <div className="p-6 glass rounded-2xl border border-primary/30 animate-fade-in animation-delay-300">
         <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
@@ -128,7 +128,7 @@ export const Contact=()=>{
             </div>
           )}
         </form>
-      </div>
+      </div>*/}
 
       {/* Contact Info */}
       <div className="space-y-6 animate-fade-in animation-delay-400">
