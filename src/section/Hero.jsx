@@ -200,15 +200,19 @@ export const Hero=()=>{
                                         <div className="mt-2 flex gap-2">
                                         <span className="text-xs px-2 py-1 rounded bg-white/6">React</span>
                                         <span className="text-xs px-2 py-1 rounded bg-white/6">Node</span>
-                                        <span className="text-xs px-2 py-1 rounded bg-white/6">MySQL</span>
-                                        <span className="text-xs px-2 py-1 rounded bg-white/6">AWS</span>
+                                        <span className="text-xs px-2 py-1 rounded bg-white/6">Express</span>
                                         </div>
                                         <div className="mt-2 flex gap-2">
                                         <span className="text-xs px-2 py-1 rounded bg-white/6">HTML</span>
                                         <span className="text-xs px-2 py-1 rounded bg-white/6">CSS</span>
-                                        <span className="text-xs px-2 py-1 rounded bg-white/6">Javascript</span>
+                                        <span className="text-xs px-2 py-1 rounded bg-white/6">JavaScript</span>
+                                        </div>
+                                         <div className="mt-2 flex gap-2">
+                                        <span className="text-xs px-2 py-1 rounded bg-white/6">AWS</span>
+                                        <span className="text-xs px-2 py-1 rounded bg-white/6">MySQL</span>
                                         <span className="text-xs px-2 py-1 rounded bg-white/6">Java</span>
                                         </div>
+                                        
                                     </div>
                                     </div>
 
