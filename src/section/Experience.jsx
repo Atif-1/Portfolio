@@ -1,6 +1,6 @@
 const experiences=[
     {
-    period:"Jun 2024-Mar 2026",
+    period:"Jun 2024-Apr 2026",
     role:"Associate Software",
     company:"Amtech Softwares",
     description:"I own the entire feature lifecycle — development, testing, debugging, error resolution, and production deployment of their management software.I also added multiple modules in react-native android application.",
